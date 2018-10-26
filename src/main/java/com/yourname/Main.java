@@ -30,26 +30,3 @@ public class Main {
 
 
 }
-
-class Main1 {
-    public static void main(String[] args) {
-        int a, b, c;
-        System.out.println("Введите стороны треугольника через пробел");
-
-        Scanner s = new Scanner(System.in);
-        a = s.nextInt();
-        b = s.nextInt();
-        c = s.nextInt();
-
-        if (a < b + c && b < a + c && c < a + b) {
-
-            System.out.println("Треугольник с такими сторонами существует");
-        } else {
-            System.out.println("Такого треугольника не существует");
-            return;
-        }
-        if (a = b || a = c || b = c) {System.out.println("Треугольник равнобедренный");}
-        if (b^2 = a^2 +c^2 || c^2 = a^2 +b^2 || c^2 = a^2 +b^2) {System.out.println("Треугольник прямоугольный");}
-        if (a = b = c) {System.out.println("Треугольник равнобедренный");}
-    }
-}
